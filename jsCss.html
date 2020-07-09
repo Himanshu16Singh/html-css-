@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript can change CSS properties on the fly</title>
+        <link rel="stylesheet" href="E:\html&css\jsCss.css">
+        <script src="E:\html&css\jsCss.js"></script>
+        <script src="E:\html&css\jsCss2.js"></script>
+        <script src="E:\html&css\jsCss3.js"></script>
+    </head>
+    <body onload="init(); init2();">
+        <p>
+            Example 1: change common properties(color,border,background color)<br>
+            Here is a div. Click the button below to change its style!</p>
+        <p>
+            <button onclick="changeStyle();">Change style of the div</button>
+        </p>
+        <p>
+            Example 2:change the background image property using an external image<br>
+            Here is a div.Click the button below to change its style!
+        </p>
+        <p>
+            <button onclick="addImageIntoBackground();">Add background image</button>
+        </p>
+        <div id="theDiv">
+            This is a div!
+        </div>
+
+        <p>
+            Example 3:Use the background image as a sprite sheet-animate Mario!<br>
+            Here is a div.Click the button below to change its style!
+        </p>
+        <button onclick="animateMario();">Animate Mario (click multiple times)</button>
+        <div id="theDiv2">
+            This is a div!
+        </div>
+        <p>
+            Here is the Mario sprite sheet image used in this example:
+        </p>
+        <img src="https://mainline.i3s.unice.fr/mooc/marioSprite.png" alt="mario picture">
+    </body>
+</html>

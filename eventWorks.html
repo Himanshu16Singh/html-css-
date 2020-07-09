@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>First example of an event listener</title>
+        <meta charset="utf-8">
+        <script>
+            // Let's add a click event listener on the whole page
+
+            // Version 1: we use a separate callback function
+                addEventListener('click',processClick);
+
+                function processClick(evt){
+                    alert("click");
+                }
+
+            // Version 2(very common): we put the callback between      // the parenthesis
+/*                addEventListener('click',function(evt){
+                    alert("click");
+                });
+*/
+            // Version 3: use the syntax with "on" followed by
+            // the name of the event, followed by the callback
+            // functio or a ref to the callback function
+            // when listening on the whole window, we usually
+            // explicitly use window.onclick, window.onkeyup etc.
+                
+/*            window.onclick = function(evt){
+                    alert("click");
+                };
+*/
+                // window.onclick = processClick;
+/*
+            function processClick(evt){
+                alert("click");
+            }
+*/
+ </script>
+        <body>
+            <button>Click anywhere on this page</button>
+        </body>
+    </head>
+</html>

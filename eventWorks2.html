@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Second example of an event listener</title>
+        <meta charset="utf-8">
+        <!-- <script> -->
+            <!-- function processClick(evt){ -->
+                <!-- document.body.innerHTML += "Clicked<br>"; -->
+            <!-- } -->
+        <!-- </script> -->
+    </head>
+    <body>
+        <!-- <button onclick="processClick();">Click me</button> -->
+        <!-- processClick() is a callback -->
+        
+        <!-- <button id="myButton">Click me</button> -->
+
+        <button id="myButton">Click me, this will work only once!</button>
+
+        <script>
+            // 1 get a refrence on the element
+            // let b = document.querySelector("#myButton");
+
+            // 2 add the event listener
+            // b.addEventListener('click',function(evt){
+                // alert("clicked! ");
+            // })
+
+            var b = document.querySelector("#myButton");
+            b.addEventListener('click',processClick);
+
+            function processClick(evt){
+                alert("Button clicked, event listener removed, try to click on the button again: nothing will happen anymore");
+                b.removeEventListener('click',processClick);
+            }
+        </script>
+    </body>
+</html>

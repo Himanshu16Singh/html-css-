@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>iframe </title>
+    </head>
+    <body>
+        <p>This is a parent page that will host the iframe</p>
+        <h4>iframe with SRC</h4>
+        <iframe src="https://www.w3.org/">
+        <p>Your browser does not support iframes.</p></iframe>
+
+        <h4>iframe with SRC and ALLOWFULLSCREEN</h4>
+        <iframe src="https://www.w3.org/" allowfullscreen>
+        <p>Your browser does not support iframes.</p></iframe>
+
+        <h4>iframe with SRC and NAME</h4>
+        <iframe src="https://www.w3.org/" name="frame-one">
+        <p>Your browser does not support iframes.</p></iframe>
+        <a href="https://www.wikipedia.org/" target="frame-one">hello</a>
+
+        <h4>iframe with SRC and SANDBOX</h4>
+        <iframe src="https://www.w3.org/" sandbox>
+        <p>Your browser does not support iframes.</p></iframe>
+
+        <h4>iframe with SRC and SANDBOX(ALLOW-POPUPS)</h4>
+        <iframe src="https://www.w3.org/" sandbox="allow-popups">
+        <p>Your browser does not support iframes.</p></iframe>
+
+        <h4>iframe with SRC and WIDTH</h4>
+        <iframe src="https://www.w3.org/" width="500">
+        <p>Your browser does not support iframes.</p></iframe>
+    </body>
+</html>

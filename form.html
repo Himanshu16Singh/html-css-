@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Form example</title>
+    <link href="form.css" rel="stylesheet">
+</head>
+<body>
+    <form action="myServerComponent.php" method="POST">
+        <fieldset>
+            <legend>Personal informations</legend>
+            <label for="firstName">First name:</label>
+            <input type="text" id="firstName" required name="firstName">
+
+            <br>
+
+            <label for="lastName">Last name:</label>
+            <input type="text" id="lastName" required name="lastName">
+        
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required name="email">
+
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" min=0 max=20 step=5 required name="age">
+    
+            <br>
+            <label for="date">Birth date:</label>
+            <input type="date" id="date" required name="date">
+        </fieldset>
+        <button>Submit form</button>
+</body>
+</html>
