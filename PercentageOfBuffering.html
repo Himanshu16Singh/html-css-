@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>JavaScript Progress Monitor</title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+        function getPercentProg() {
+            var myVideo = document.getElementsByTagName('video')[0];
+            var endBuf = myVideo.buffered.end(0);
+            var soFar = parseInt(((endBuf / myVideo.duration) * 100));
+            document.getElementById("loadStatus").innerHTML =  soFar + '%';
+        }
+       function myAutoPlay() {
+           var myVideo = document.getElementsByTagName('video')[0];
+           myVideo.play();
+       }
+       function addMyListeners(){
+           var myVideo = document.getElementsByTagName('video')[0];
+           myVideo.addEventListener('progress', getPercentProg, false);
+           myVideo.addEventListener('canplaythrough', myAutoPlay, false);
+       }
+    </script>
+</head>
+<body onload="addMyListeners()">
+  
+  <h1>Check progression of buffering before playing a movie. Useful withy slow connection (3G, etc.)</h1>
+    <div>
+        <video controls>
+               <source src=http://html5doctor.com/demos/video-canvas-magic/video.webm type=video/webm> 
+	           <source src=http://html5doctor.com/demos/video-canvas-magic/video.ogg type=video/ogg> 
+	           <source src=http://html5doctor.com/demos/video-canvas-magic/video.mp4 type=video/mp4> 
+        </video>
+        <p id="loadStatus">MOVIE LOADING...</p>
+    </div>
+</body>
+</html>
