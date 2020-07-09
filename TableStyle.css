@@ -1,0 +1,69 @@
+table.eg1 , th.eg1 , td.eg1{
+    border: 1px solid black;
+}
+.eg2{
+    border: thin dashed black;
+}
+.eg3{
+    border: initial;
+}
+
+.no-collapse{
+    border: 1px solid black;
+}
+.collapse{
+    border-collapse: collapse;
+}
+
+.diff{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th.eg4{
+    width: 25%;
+}
+th.eg5{
+    height: 70px;
+}
+table.eg6{
+    width: 100%;
+}
+
+.other{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th.other,td.other{
+    text-align: right;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.eg7 , .eg8 , .eg9{
+    border: 1px solid black;
+}
+table.eg7 , table.eg8 , table.eg9{
+    border-collapse: separate;
+}
+.eg7{
+    border-spacing: 50px;
+}
+.eg8{
+    border-spacing: 25px 50px;
+}
+.eg9{
+    border-spacing: 50px 50px;
+}
+
+.eg10 , .eg11{
+    padding: 15px;
+}
+table.eg10 , table.eg11{
+    border-collapse: collapse;
+}
+.eg10{
+    border: 1px solid black;
+}
+.eg11{
+    border-bottom: 1px solid black;
+}

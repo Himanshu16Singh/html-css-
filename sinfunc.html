@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plotting functions in JavaScript using function plot library</title>
+        <meta charset="utf-8">
+        <link href="E:\html&css\sinfunc.css" rel="stylesheet">
+        <script src="https://mauriciopoppe.github.io/functionplot/js/function-plot.js"></script>
+        <script >var parameters = {
+            target:'#myFunction' ,
+            data: [{
+                fn: 'sin(x)' ,
+                color:'red'
+            }] ,
+            grid: true,
+            yAxis: {domain:[-1,1]} ,
+            xAxis: {domain:[0,2*Math.Pi]}
+        } ;
+        functionPlot(parameters) ;</script>
+    </head>
+    <body>
+        <div id="myFunction">
+            <button ></button>
+        </div>
+    </body>
+</html>

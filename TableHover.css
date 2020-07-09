@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse ;
+}
+table , th , td{
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+table.eg1 tr:hover{
+    background-color: #386907;
+}
+table.eg2 tr:hover{
+    background-color: grey;
+}

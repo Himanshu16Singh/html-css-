@@ -1,0 +1,16 @@
+table{
+    border-collapse: collapse;
+}
+table, th , td{
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+table.eg1 tr:nth-child(even) {
+    background-color: greenyellow;
+}
+table.eg2 tr:nth-child(odd) {
+    background-color: greenyellow;
+}
+table.eg3 tr:nth-child(3n){
+    background-color: greenyellow;
+}

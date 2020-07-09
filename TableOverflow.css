@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+}
+div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid blue;
+}
+table , th , td{
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+div.overflow-visible{
+    overflow: visible;
+}
+div.overflow-hidden{
+    overflow: hidden;
+}
+div.overflow-scroll{
+    overflow: scroll;
+}
+div.overflow-auto{
+    overflow: auto;
+}
+div.overflow-x-auto{
+    overflow-x: auto;
+    overflow-y: hidden;
+}

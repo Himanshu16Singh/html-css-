@@ -1,0 +1,37 @@
+body{
+    height: 400px;
+    border: 10px solid red;
+    margin: 75px;
+    background-color:rgb(228, 170, 95);
+}
+h4{
+    background-color: brown;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 60px;
+}
+h6{
+    background-color: cadetblue;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+}
+#start{
+    background-color: chartreuse;
+    cursor: grab;
+    margin-left: 550px;
+    margin-right: 500px;
+    font-size: 45px;
+    text-align: center;
+    border: 1px solid brown;
+}
+#Worddiv{
+    margin-top: 50px;
+    font-size: 90px;
+    color: darkblue;
+    font-style: italic;
+    text-align: center;
+}
+label{
+    font-size: 20px;
+}

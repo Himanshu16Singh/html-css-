@@ -1,0 +1,29 @@
+table , th , td{
+    padding: 30px;
+    border: 1px solid #DCDCDC;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    overflow: auto;
+    font-family: "Ubuntu","Verdana","Arial",sans-serif;
+}
+tr:hover{
+    background-color: #e6e6e6;
+}
+tr.main-heading{
+    line-height: 10%;
+    background-color: #32B2B2;
+    color: white;
+}
+tr.sub-heading{
+    line-height: 150%;
+    background-color: #149494;
+    color: white;
+}
+tr.buy-now-footer{
+    line-height: 150%;
+    background-color: #149494;
+    font-weight: bold;
+    font-size: 20px;
+}
