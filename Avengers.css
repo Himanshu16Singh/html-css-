@@ -1,0 +1,89 @@
+
+::-webkit-scrollbar{
+    width: 2%;
+    background-color: rgb(230, 200, 138);
+}
+::-webkit-scrollbar-thumb{
+    position: fixed;
+    border-radius: 4%;
+    background-color: #d8580f;
+}
+body{
+    background-color:black;
+    font-size: 25px;
+    line-height: 1px;
+}
+h1{
+    font-size: 50px;
+    font-family: monospace;
+    color: #f78215;
+}
+nav li{
+    font-family: monospace;
+    display:inline;
+    border : black ;
+    border-right: red;
+    border-right-style: inset;
+}
+a{
+    font-size: 100%;
+    font-weight: 20;
+    padding: 0.5%;
+    text-decoration: wavy;
+    cursor: grab;
+    color: lightslategrey;
+    font-style: italic;
+    font-size-adjust: initial;
+}
+nav a:hover{
+    border-radius: 25%;
+    background-color: lightslategrey ;
+    color: black;
+}
+summary{    
+    font-family: monospace;
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+#A{
+    float: left;
+    width: 68%;    
+    border-style: dotted ;
+    background-color: lightgray;
+    border-radius: 5px; 
+    text-align: right;
+}
+#A img{
+    margin: 4%;
+    width: 95% ;
+    line-height: 5px;
+}
+#A span{
+    font-family: monospace;
+    background-color: ivory;
+    color: red;
+    font-style: normal;
+    border: red;
+    border-style: ridge;
+}
+#A span:hover{
+    background-color: red;
+    color: ivory;
+    border: ridge ivory;
+}
+span{
+    color: red;
+    font-size: 25px;
+}
+aside{
+    float: right;
+    width: 18%;
+    margin-top: 5%;
+    border-style:solid;
+    border-color: slategray;
+    border-radius: 25px;
+    background-color: honeydew;
+    color: rgb(24, 17, 17);
+    line-height: 35px;
+
+}

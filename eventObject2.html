@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Example of the 'scroll' event</title>
+        <style>
+            .progress {
+                border: 1px solid blue;
+                width: 100px;
+                position: fixed;
+                top: 10px; right: 10px;
+            }
+            .progress >div{
+                height: 12px;
+                background: lightblue;
+                width: 0%;
+                font-size: 8px;
+            }
+            #text{
+                margin-top: 50px;
+            }
+            body{
+                height: 2000px;
+            }
+        </style>
+        <script src="E:\html&css\eventObject2.js" ></script>
+    </head>
+    <body>
+        <div class="progress">
+            <div>Percentage</div>
+            <p id="text">
+                Scroll me and the progress bar on the right will show the Percentage of scroll. Look also at the CSS
+                code(body is 2000px height, for example)...
+            </p>
+        </div>
+    </body>
+</html>

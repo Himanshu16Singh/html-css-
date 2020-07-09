@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Compute day occurences of your birthday</title>
+    <link href="Birthday.css" rel="styleSheet">
+    <script src="Birthday.js"></script>
+</head>
+<body>
+    <label for="birthday">Your birthday: </label><input id="birthday" type="date" value="2000-11-16">
+    <p>Please enter a starting and an ending year, then click the button.</p>
+    <label for="start">Start year:</label>
+    <input type=number id="start" value=2020 min=1965 max=3000>
+    <p></p>
+    <label for="end">End year:</label>
+    <input type=number id="end" value=2050 min=1965 max=3000>
+    <p></p>
+    <button onclick="computeBirthdays();">
+        Compute how many times your birthday will occur, for each day of the week</button>
+    <output id="results"></output>
+</body>
+</html>
